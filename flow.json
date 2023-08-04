@@ -53,5 +53,52 @@
         "x": 530,
         "y": 160,
         "wires": []
+    },
+    {
+        "id": "8e2bd36b9a72bc21",
+        "type": "http in",
+        "z": "5a7082eafeeb8131",
+        "name": "",
+        "url": "/teste02",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 110,
+        "y": 240,
+        "wires": [
+            [
+                "4f3bf9fb0d6ee00f"
+            ]
+        ]
+    },
+    {
+        "id": "4f3bf9fb0d6ee00f",
+        "type": "function",
+        "z": "5a7082eafeeb8131",
+        "name": "function 2",
+        "func": "let a = 2;\nmsg = a;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 240,
+        "wires": [
+            [
+                "60cd28290326255d"
+            ]
+        ]
+    },
+    {
+        "id": "60cd28290326255d",
+        "type": "http response",
+        "z": "5a7082eafeeb8131",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 510,
+        "y": 240,
+        "wires": []
     }
 ]
