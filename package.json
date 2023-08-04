@@ -1,0 +1,12 @@
+{
+    "name": "projeto-teste",
+    "description": "primeiro teste para saber como usar o git com node-red",
+    "version": "0.0.1",
+    "dependencies": {},
+    "node-red": {
+        "settings": {
+            "flowFile": "flow.json",
+            "credentialsFile": "flow_cred.json"
+        }
+    }
+}
