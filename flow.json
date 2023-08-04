@@ -1,1 +1,57 @@
-[]
+[
+    {
+        "id": "5a7082eafeeb8131",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "89536b1e4f58fc20",
+        "type": "http in",
+        "z": "5a7082eafeeb8131",
+        "name": "",
+        "url": "/teste01",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 130,
+        "y": 160,
+        "wires": [
+            [
+                "34ab016640befb99"
+            ]
+        ]
+    },
+    {
+        "id": "34ab016640befb99",
+        "type": "function",
+        "z": "5a7082eafeeb8131",
+        "name": "function 1",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 160,
+        "wires": [
+            [
+                "0045d5c9b6b364ce"
+            ]
+        ]
+    },
+    {
+        "id": "0045d5c9b6b364ce",
+        "type": "http response",
+        "z": "5a7082eafeeb8131",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 530,
+        "y": 160,
+        "wires": []
+    }
+]
