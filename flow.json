@@ -29,7 +29,7 @@
         "type": "function",
         "z": "5a7082eafeeb8131",
         "name": "function 1",
-        "func": "\nreturn msg;",
+        "func": "let a = 2;\nmsg = a;\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
